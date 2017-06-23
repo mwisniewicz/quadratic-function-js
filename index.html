@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="./css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css?1234">
     <script src="./js/plotly-latest.min.js"></script>
     <script src="./js/main.js" type="text/javascript"></script>
 </head>
@@ -16,17 +16,33 @@
 	<div class="wrapper">
 		<div class="container">
 			<div class="box1">
+				<form action="">
+					<span>a</span>
+					<input type="text" name="a"><br>
+					<span>b</span>
+					<input type="text" name="b"><br>
+					<span>c</span>
+					<input type="text" name="c">
+				</form>
+				<button type="button" onclick="alert('Hello World!')">Click Me!</button>
 			</div>
 			<div class="box2">
+			<div id="tester" style="width:100%;"></div>
 			</div>
 
 		</div>
 	</div>
-	<div id="tester" style="width:90%;height:250px;"></div>
+	
 
 </main>
 <footer>
 </footer>
-
+<script>
+	TESTER = document.getElementById('tester');
+	Plotly.plot( TESTER, [{
+	x: [1, 2, 3, 4, 5],
+	y: [1, 2, 4, 8, 16] }], {
+	margin: { t: 0 } } );
+</script>
 </body>
 </html>
