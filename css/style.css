@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One');
+
+body {
+	font-family: 'Bubbler One', sans-serif;
+}
+
+header {
+	background-color: #1B2432;
+	height: 100px;
+	line-height: 100px;
+	text-transform: uppercase;
+}
+
+header h1 {
+	margin: 0;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	color: #B76D68;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 900px;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.container {
+	display: flex;
+	margin: 0 auto;
+}
+
+.box1 {
+
+	height: 400px;
+	width: 400px;
+	background-color: green;
+	margin: 10px;
+}
+
+.box2 {
+
+	height: 400px;
+	width: 400px;
+	background-color: green;
+	margin: 10px;
+}
