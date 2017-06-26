@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="./css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css?1234">
     <script src="./js/plotly-latest.min.js"></script>
-    <script src="./js/main.js" type="text/javascript"></script>
+    
 </head>
 <body>
 <header>
@@ -18,16 +18,17 @@
 			<div class="box1">
 				<form action="">
 					<span>a</span>
-					<input type="text" name="a"><br>
+					<input id="first_value" type="text" name="a"><br>
 					<span>b</span>
-					<input type="text" name="b"><br>
+					<input id="second_value" type="text" name="b"><br>
 					<span>c</span>
-					<input type="text" name="c">
+					<input id="third_value" type="text" name="c">
 				</form>
-				<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+				<button type="button" id="button">Click Me!</button>
 			</div>
 			<div class="box2">
-			<div id="tester" style="width:100%;"></div>
+			<div id="result">WYNIK</div>
+			<!-- <div id="tester" style="width:100%;"></div> -->
 			</div>
 
 		</div>
@@ -37,12 +38,6 @@
 </main>
 <footer>
 </footer>
-<script>
-	TESTER = document.getElementById('tester');
-	Plotly.plot( TESTER, [{
-	x: [1, 2, 3, 4, 5],
-	y: [1, 2, 4, 8, 16] }], {
-	margin: { t: 0 } } );
-</script>
+<script src="./js/main.js" type="text/javascript"></script>
 </body>
 </html>
