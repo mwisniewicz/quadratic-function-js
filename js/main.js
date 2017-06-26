@@ -5,22 +5,32 @@ function mainFunction() {
 	var first_value = parseFloat(document.getElementById("first_value").value);
 	var second_value = parseFloat(document.getElementById("second_value").value);
 	var third_value = parseFloat(document.getElementById("third_value").value);
+
 	if (isNaN(first_value) || isNaN(second_value) || isNaN(third_value)) {
+
 		alert("Give the numbers!");
 	}
 
 	else {
+
 		var delta = deltaFunction(first_value,second_value,third_value);
+
 		if (delta < 0){
-			alert("Delta is less than Zero!")
+
+			alert("Delta is less than zero!")
+
 		}
 
 		else if (delta > 0) {
+
 			var roots_results = roots(first_value,second_value,delta);
+
 		    document.getElementById("result").innerHTML = "<h3>Function:</h3><span>" + 
 		    first_value + "x^2 + " + second_value + "x + " + third_value + "</span>" +
 		    "<p><strong>Delta:</strong> " + delta + "</p>" +
 		    "<p><strong>Roots:</strong> " + "x1 = " + roots_results[0] + ", x2 = " + roots_results[1] + "</p>";
+
+		    //CLEAN INPUTS
 		    document.getElementById("first_value").value = '';
 		    document.getElementById("second_value").value = '';
 		    document.getElementById("third_value").value = '';
